@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+//____________________________
+//読み込み
+//____________________________
+@import 'configuration';
+
+//____________________________
+//トップページ
+//____________________________
+
+html {
+  color: $black;
+  font-family: Noto sans JP, sans-serif;
+  line-height: 1.8;
+  background-color: $white;
+
+  * {
+    letter-spacing: 0em;
+  }
+
+  font-size: 10px;
+}
+
+body {
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', YuGothic, 'Yu Gothic',
+    sans-serif;
+  background-color: $white;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#top {
+  overflow: hidden;
+}
+
+.inner {
+  width: 100%;
+  max-width: 832px;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media #{$sp} {
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+  }
+}

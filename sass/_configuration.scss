@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+//____________________________
+//色設定
+//____________________________
+//共通
+$black: #333333;
+$white: #fcfcfc;
+
+//メインカラー
+$primary: #607AE3;
+
+//サブカラー
+$sub: #D7EBC1;
+$gray: #555555;
+$lightgray: #dddddd;
+$lightgray2: #eeeeee;
+
+
+//____________________________
+//メディアクエリ
+//____________________________
+$sp: "only screen and (max-width:480px)";
+$tab: "only screen and (min-width:481px) and (max-width:766px)";
+$pc: "only screen and (min-width:767px)";
+
+$iphone5: "only screen and (max-width:320px)";
+//____________________________
+//レスポンシブ
+//____________________________
+@mixin flex{
+  flex-flow: wrap;
+  justify-content: space-between;
+  display: -webkit-flex;
+  display:    -moz-flex;
+  display:     -ms-flex;
+  display:      -o-flex;
+  display:         flex;
+}
+
+
+//背景
+@mixin bgi{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+@mixin gothic {
+  font-family: 'メイリオ', Meiryo, YuGothic, 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+}
+
+@mixin maru {
+  font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+
+@mixin yu {
+  font-family: YuGothic, "Yu Gothic", sans-serif;
+}
